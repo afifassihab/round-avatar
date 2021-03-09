@@ -1,0 +1,40 @@
+:root {
+	--length: 5rem;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.avatar {
+	width: var(--length);
+	height: var(--length);
+	position: relative;
+	background-color: aqua;
+	border-radius: 50%;
+	margin: calc(var(--length) / 10);
+
+	.banner {
+		height: calc(var(--length) / 4);
+		width: calc(100% - var(--length) / 22);
+		position: absolute;
+		left: calc(var(--length) / 44);
+		background-color: bisque;
+		bottom: calc(var(--length) / 4);
+		border-radius: 0 0 calc(var(--length) / 8) calc(var(--length) / 8);
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+
+	.circle {
+		border: calc(var(--length) / 40) solid bisque;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		box-sizing: border-box;
+	}
+}
